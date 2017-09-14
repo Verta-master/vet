@@ -1,0 +1,42 @@
+.protect__list {
+  display: none;
+}
+
+.protect__text {
+  line-height: 22px;
+  text-align: center;
+  
+  span {
+    color: @violet;
+    font-weight: 700;
+  }
+  
+  &--hidden {
+    display: none;
+  }
+}
+
+.protect__check {
+  display: none;
+}
+
+.protect__arrow {
+  display: block;
+  width: 13px;
+  height: 21px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(../img/arrow-next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(90deg);
+}
+
+.protect__check:checked ~ .protect__text--hidden {
+  display: block;
+}
+
+.protect__check:checked + .protect__arrow {
+  transform: rotate(-90deg);
+  margin-bottom: 0;
+}

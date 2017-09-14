@@ -1,0 +1,91 @@
+.promo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-image: url(../img/background-1-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top 54px;
+}
+
+.promo__lid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.promo_h1 {
+  order: 1;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 140px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 100px;
+  }
+}
+
+.promo__btn {
+  order: 2;
+}
+
+.promo__list {
+  order: 5;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.promo__item {
+  padding-left: 73px;
+  margin-bottom: 20px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+  
+  &:first-child::before {
+    width: 34px;
+    height: 45px;
+    background-image: url(../img/icon-clock-blue.png);
+  }
+  
+  &:nth-child(2)::before {
+    width: 49px;
+    height: 51px;
+    background-image: url(../img/icon-cats-blue.png);
+  }
+  
+  &:nth-child(3)::before {
+    width: 48px;
+    height: 40px;
+    background-image: url(../img/icon-home-blue.png);
+  }
+}
+
+.promo__img {
+  order: 3;
+  margin-top: 33px;
+}
+
+.promo__slogan {
+  order: 4;
+  font-size: 28px;
+  font-weight: 700;
+  color: @violet;
+  text-transform: uppercase;
+  margin: 0;
+  transform: rotate(10deg);
+}
