@@ -1,0 +1,83 @@
+.howto {
+  padding-bottom: 50px;
+}
+
+.howto__title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: @violet;
+  text-transform: uppercase;
+  
+  span {
+    display: block;
+    color: @grass;
+    text-transform: none;
+  }
+}
+
+.howto__img {
+  border-radius: 50%;
+  border: 3px solid @violet;
+  margin-bottom: 20px;
+}
+
+.howto__step {
+  position: relative;
+  
+  &::before {
+    content: "01";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    color: @violet;
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 700;
+    opacity: 0.2;
+  }
+}
+
+.howto__item {
+  &:nth-child(2) .howto__step::before {
+    content: "02";
+  }
+  
+  &:nth-child(3) .howto__step::before {
+    content: "03";
+  }
+}
+
+.howto__check,
+.howto__text,
+.howto__circle {
+  display: none;
+}
+
+.howto__label {
+  font-size: 28px;
+  line-height: 28px;
+  color: @grass;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -45px;
+    width: 30px;
+    height: 18px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.howto__check:checked ~ .howto__text {
+  display: block;
+}
+
+.howto__check:checked + .howto__label::after {
+  transform: scaleY(-1);
+}
