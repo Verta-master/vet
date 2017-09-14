@@ -1021,3 +1021,93 @@ button {
   top: 37%;
   right: 7%;
 }
+.howto {
+  padding-bottom: 50px;
+}
+.howto__title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #682567;
+  text-transform: uppercase;
+}
+.howto__title span {
+  display: block;
+  color: #92c85e;
+  text-transform: none;
+}
+.howto__img {
+  border-radius: 50%;
+  border: 3px solid #682567;
+  margin-bottom: 20px;
+}
+.howto__step {
+  position: relative;
+}
+.howto__step::before {
+  content: "01";
+  position: absolute;
+  top: -55px;
+  left: 0;
+  color: #682567;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 700;
+  opacity: 0.2;
+}
+.howto__item:nth-child(2) .howto__step::before {
+  content: "02";
+}
+.howto__item:nth-child(3) .howto__step::before {
+  content: "03";
+}
+.howto__check,
+.howto__text,
+.howto__circle {
+  display: none;
+}
+.howto__label {
+  font-size: 28px;
+  line-height: 28px;
+  color: #92c85e;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+.howto__label::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -45px;
+  width: 30px;
+  height: 18px;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+}
+.howto__check:checked ~ .howto__text {
+  display: block;
+}
+.howto__check:checked + .howto__label::after {
+  transform: scaleY(-1);
+}
+.review {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url(../img/background-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.review__main {
+  display: none;
+}
+.review__title {
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #92c85e;
+}
+.review__title span {
+  display: block;
+  color: #682567;
+  text-transform: none;
+}
