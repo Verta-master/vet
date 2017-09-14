@@ -76,10 +76,10 @@
     <img src="img/family.png" alt="Кошка без блох" class="details__bg" width="820" height="683">
     <div class="details__wrap wrapper">
       <h2 class="details__title">Вектра Фелис – это:</h2>
-      <input type="radio" name="slide" id="slide-1" class="details__radio">
+      <input type="radio" name="slide" id="slide-1" class="details__radio" checked>
       <input type="radio" name="slide" id="slide-2" class="details__radio">
       <input type="radio" name="slide" id="slide-3" class="details__radio">
-      <input type="radio" name="slide" id="slide-4" class="details__radio" checked>
+      <input type="radio" name="slide" id="slide-4" class="details__radio">
       <ul class="details__list">
         <li class="details__item">Быстрое уничтожение блох при контакте</li>
         <li class="details__item">1 пипетка защищает кошку от блох в течение 30 дней</li>
@@ -123,21 +123,24 @@
     </ul>
   </section>
   
-  <section class="buy">
+  <section class="buy wrapper">
     <h2 class="buy__title"><span>Где купить</span>Вектра Фелис</h2>
-    <label for="moscow" class="buy__label">Москва</label>
-    <input type="radio" name="moscow" id="moscow" class="buy__input" checked>
-    <input type="radio" name="piter" id="piter" class="buy__input">
-    <label for="piter" class="buy__label">Санкт-Петербург</label>
+    <input type="radio" name="buy" id="moscow" class="buy__input" checked>
+    <input type="radio" name="buy" id="piter" class="buy__input">
+    <div class="buy__switch">
+      <label for="moscow" class="buy__label buy__label--moscow">Москва</label>
+      <div class="buy__toggle"></div>
+      <label for="piter" class="buy__label buy__label--piter">Санкт-Петербург</label>
+    </div>
     <ul class="buy__list buy__list--moscow">
       <li class="buy__item">
         <img src="img/logo-bethoven.png" alt="" class="buy__img" width="279" height="142">
       </li>
       <li class="buy__item">
-        <img src="img/logo-zoomagazin.png" alt="" class="buy__img" width="392" height="92">
+        <img src="img/logo-cats-dogs.png" alt="" class="buy__img" width="392" height="184">
       </li>
       <li class="buy__item">
-        <img src="img/logo-cats-dogs.png" alt="" class="buy__img" width="392" height="184">
+        <img src="img/logo-zoomagazin.png" alt="" class="buy__img" width="392" height="92">
       </li>
       <li class="buy__item">
         <img src="img/logo-zoogalereya.png" alt="" class="buy__img" width="224" height="151">
@@ -148,10 +151,10 @@
         <img src="img/logo-bethoven.png" alt="" class="buy__img" width="279" height="142">
       </li>
       <li class="buy__item">
-        <img src="img/logo-zoomagazin.png" alt="" class="buy__img" width="392" height="92">
+        <img src="img/logo-cats-dogs.png" alt="" class="buy__img" width="392" height="184">
       </li>
       <li class="buy__item">
-        <img src="img/logo-cats-dogs.png" alt="" class="buy__img" width="392" height="184">
+        <img src="img/logo-zoomagazin.png" alt="" class="buy__img" width="392" height="92">
       </li>
       <li class="buy__item">
         <img src="img/logo-zoogalereya.png" alt="" class="buy__img" width="224" height="151">
@@ -163,30 +166,35 @@
     <div class="wrapper">
       <h2 class="unique__title">В чем уникальность формулы<span>Вектра Фелис?</span></h2>
       <ul class="unique__list">
-        <li class="unique__item">После нанесения высокая концентрация действующих веществ сохраняется и на протяжении <span>30</span> дней</li>
-        <li class="unique__item"><b>Динотефуран</b> через 2 часа уничтожит до 100% блох</li>
-        <li class="unique__item"><b>Пирипроксифен</b> Уничтожает яйца и личинки насекомых</li>
-        <li class="unique__item">На протяжении 1 месяца убивает взрослых блох через <span>2</span> часа</li>
+        <li class="unique__item"><p><b>Динотефуран</b> через 2 часа уничтожит до 100% блох</p></li>
+        <li class="unique__item"><p><b>Пирипроксифен</b> Уничтожает<br>яйца и личинки насекомых</p></li>
+        <li class="unique__item">После нанесения высокая концентрация действующих веществ сохраняется и на протяжении<br><span>30</span> дней</li>
+        <li class="unique__item">На протяжении 1 месяца убивает взрослых блох через <b><span>2</span> часа</b></li>
       </ul>
-      <img src="img/cat-sofa.png" alt="Заказать" class="unique__main" width="660" height="324">
-      <img src="img/product.png" alt="Заказать" class="unique__product" width="584" height="177">
-      <ul class="unique__bug-list">
-        <li class="unique__bug-item">
-          <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
-        </li>
-        <li class="unique__bug-item">
-          <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
-        </li>
-        <li class="unique__bug-item">
-          <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
-        </li>
-        <li class="unique__bug-item">
-          <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
-        </li>
-        <li class="unique__bug-item">
-          <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
-        </li>
-      </ul>
+      <div class="unique__block">
+        <img src="img/cat-sofa.png" alt="Заказать" class="unique__main" width="660" height="324">
+        <img src="img/product.png" alt="Заказать" class="unique__product" width="584" height="177">
+        <ul class="unique__bug-list">
+          <li class="unique__bug-item">
+            <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
+          </li>
+          <li class="unique__bug-item">
+            <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
+          </li>
+          <li class="unique__bug-item">
+            <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
+          </li>
+          <li class="unique__bug-item">
+            <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
+          </li>
+          <li class="unique__bug-item">
+            <img src="img/bug.png" alt="уничтожит блох" class="unique__bug" width="29" height="26">
+          </li>
+          <li class="unique__bug-item">
+            <img src="img/star.png" alt="уничтожит блох" class="unique__bug" width="47" height="43">
+          </li>
+        </ul>
+      </div>
       <button class="btn btn--center">Заказать в ближайшем магазине</button>
     </div>
   </section>

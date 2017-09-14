@@ -1,0 +1,181 @@
+.unique {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 70px;
+  color: #fff;
+  background-image: url(../img/background-4.png);
+  background-repeat: no-repeat;
+  background-position: right -200px center;
+}
+
+.unique__title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  span {
+    display: block;
+    color: @grass;
+    text-transform: none;
+  }
+}
+
+.unique__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 50px;
+}
+
+.unique__item {
+  position: relative;
+  
+  b {
+    display: block;
+  }
+  
+  &:first-child,
+  &:nth-child(2) {
+    width: 160px;
+    text-align: center;
+  }
+  
+  &:first-child::before,
+  &:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 201px;
+    height: 201px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+  }
+  
+  &:first-child::after,
+  &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+  
+  &:first-child::after {
+    left: -25px;
+    background-image: url(../img/bug-beated.png);
+  }
+  
+  &:nth-child(2)::after {
+    right: -25px;
+    background-image: url(../img/microbs.png);
+  }
+  
+  &:first-child {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  &:nth-child(2) {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 65px;
+  }
+  
+  &:nth-child(3) {
+    align-self: flex-end;
+    text-align: right;
+    width: 240px;
+    margin-bottom: 15px;
+    
+    span {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700;
+    }
+  }
+  
+  &:nth-child(4) {
+    width: 205px;
+    margin-bottom: 80px;
+    
+    b {
+      font-weight: 400;
+      position: absolute;
+      left: 55px;
+      bottom: -25px;
+    }
+    
+    span {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700;
+    }
+  }
+}
+
+.unique__block {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.unique__product {
+  width: 152px;
+  height: auto;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 0;
+  left: 33%;
+}
+
+.unique__main {
+  transform: scale(1.2);
+}
+
+.unique__bug-item {
+  position: absolute;
+  
+  img {
+    transform: scale(0.75);
+  }
+  
+  &:first-child {
+    top: 20%;
+    left: 0;
+  }
+  
+  &:nth-child(2) {
+    transform: scaleX(-1);
+    top: -20px;
+    left: 15%;
+  }
+  
+  &:nth-child(3) {
+    transform: scaleX(-1);
+    top: 45%;
+    left: 45%;
+  }
+  
+  &:nth-child(4) {
+    top: -10px;
+    right: 10%;
+  }
+  
+  &:nth-child(5) {
+    transform: scaleX(-1);
+    top: 45%;
+    right: 10%;
+  }
+  
+  &:nth-child(6) {
+    top: 37%;
+    right: 7%;
+  }
+}

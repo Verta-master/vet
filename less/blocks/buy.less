@@ -1,0 +1,104 @@
+.buy__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  color: @grass;
+  text-align: center;
+  margin-bottom: 50px;
+  
+  span {
+    display: block;
+    font-size: 45px;
+    line-height: 46px;
+    color: @violet;
+    text-transform: uppercase;
+  }
+}
+
+.buy__label {
+  color: #acacac;
+  position: relative;
+  cursor: pointer;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: @violet;
+    display: none;
+  }
+  
+  &:first-child::after {
+    right: -49px;
+  }
+  
+  &:last-child::after {
+    left: -48px;
+  }
+}
+
+.buy__toggle {
+  width: 41px;
+  height: 21px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 11px;
+}
+
+.buy__input {
+  display: none;
+}
+
+#moscow:checked ~ .buy__switch .buy__label--moscow,
+#piter:checked ~ .buy__switch .buy__label--piter {
+  color: @violet;
+}
+
+#moscow:checked ~ .buy__list--moscow,
+#piter:checked ~ .buy__list--piter {
+  display: flex;
+}
+
+#moscow:checked ~ .buy__switch .buy__label--moscow::after,
+#piter:checked ~ .buy__switch .buy__label--piter::after {
+  display: block;
+}
+
+.buy__switch {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.buy__list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy__item {
+  &:first-child img {
+    width: 177px;
+    height: 90px;
+  }
+  
+  &:nth-child(2) img {
+    width: 249px;
+    height: 117px;
+  }
+  
+  &:nth-child(3) img {
+    width: 249px;
+    height: 58px;
+  }
+  
+  &:nth-child(4) img {
+    width: 142px;
+    height: 96px;
+  }
+}
