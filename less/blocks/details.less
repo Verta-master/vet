@@ -1,8 +1,10 @@
 .details {
+  width: 320px;
+  margin: 0 auto;
   background-image: url(../img/background-2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top 263px;
+  background-position: center top 215px;
 }
 
 .details__bg {
@@ -14,4 +16,161 @@
   line-height: 51px;
   font-weight: 700;
   color: #fff;
+  order: 1;
+}
+
+.details__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  position: relative;
+}
+
+.details__flash {
+  display: none;
+}
+
+.details__block {
+  position: relative;
+  order: 4;
+}
+
+.details__circle-1,
+.details__circle-2,
+.details__circle-3,
+.details__circle-4 {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.details__circle-1 {
+  transform: translate(-20px,-60px);
+}
+
+.details__circle-2 {
+  transform: translate(20px,0);
+}
+
+.details__circle-3 {
+  transform: translate(-50px,10px);
+}
+
+.details__circle-4 {
+  transform: translate(-90px,-50px);
+}
+
+.details__final {
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+}
+
+.details__link {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  
+  &:hover,
+  &:active {
+    border-bottom: none;
+  }
+}
+
+.details__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  order: 2;
+}
+
+.details__item {
+  padding-left: 100px;
+  position: relative;
+  display: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  &:first-child {
+    max-width: 280px;
+    
+    &::before {
+      background-image: url(../img/icon-clock-green.png);
+    }
+  }
+  
+  &:nth-child(2)::before {
+    background-image: url(../img/icon-calender-green.png);
+  }
+  
+  &:nth-child(3) {
+    max-width: 200px;
+    
+    &::before {
+      background-image: url(../img/icon-cats-green.png);
+    }
+  }
+  
+  &:nth-child(4) {
+    max-width: 170px;
+    
+    &::before {
+      background-image: url(../img/icon-pipet-green.png);
+    }
+  }
+}
+
+.details__radio {
+  display: none;
+}
+
+.details__slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 3;
+  margin-bottom: 25px;
+}
+
+.details__btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#slide-1:checked ~ .details__slider .details__btn--1,
+#slide-2:checked ~ .details__slider .details__btn--2,
+#slide-3:checked ~ .details__slider .details__btn--3,
+#slide-4:checked ~ .details__slider .details__btn--4 {
+  background-color: #fff;
+}
+
+#slide-1:checked ~ .details__list .details__item:nth-child(4),
+#slide-2:checked ~ .details__list .details__item:nth-child(1),
+#slide-3:checked ~ .details__list .details__item:nth-child(2),
+#slide-4:checked ~ .details__list .details__item:nth-child(3) {
+  display: block;
+}
+
+.details__text {
+  order: 5;
+  max-width: 230px;
+  margin-bottom: 160px;
 }
