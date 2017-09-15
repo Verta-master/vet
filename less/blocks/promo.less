@@ -175,10 +175,28 @@
   .promo__item {
     font-size: 21px;
     line-height: 30px;
+    margin-bottom: 10px;
+    
+    &::before {
+      transform: scale(1) translateY(-80%);
+    }
   }
   
   .promo__item:first-child,
   .promo__item:nth-child(2) {
     max-width: 370px;
+  }
+  
+  .promo_h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .promo__list {
+    margin-bottom: 25px;
+  }
+  
+  .promo__img {
+    margin-top: 50px;
   }
 }

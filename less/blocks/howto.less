@@ -238,15 +238,18 @@
 //----------------desktop
 @media @desktop {
   .howto__item:first-child .howto__pic {
-    left: 70%;
+    left: 46%;
+    top: 45px;
   }
   
   .howto__item:nth-child(2) .howto__pic {
-    left: 58%;
+    left: 36%;
+    top: 46%;
   }
   
   .howto__item:nth-child(3) .howto__pic {
-    left: 70%;
+    left: 46%;
+    top: 82%;
   }
   
   .howto__item:nth-child(3) .howto__step {
@@ -255,6 +258,49 @@
   }
   
   .howto__text {
-    padding: 0 20px; 
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .howto__title {
+    font-size: 72px;
+    line-height: 72px;
+    padding-top: 20px;
+    margin-bottom: 80px;
+    
+    &::after {
+      right: 170px;
+    }
+  }
+  
+  .howto__main {
+    width: 676px;
+    height: 676px;
+  }
+  
+  .howto__circle {
+    transform: translate(20%,0);
+    
+    &::before {
+      top: 85px;
+      left: -30px;
+    }
+  }
+  
+  .howto__list {
+    width: 40%;
+    padding-top: 50px;
+  }
+  
+  .howto__item:nth-child(2) {
+    max-width: 305px;
+    
+    .howto__step {
+      padding-right: 20px;
+    }
+  }
+  
+  .howto__item:last-child {
+    margin-right: 20px;
   }
 }
