@@ -1850,6 +1850,7 @@ button.swiper-pagination-bullet {
   .header {
     -ms-flex-align: start;
         align-items: flex-start;
+    width: 768px;
   }
   .header__link {
     font-size: 21px;
@@ -1900,6 +1901,11 @@ button.swiper-pagination-bullet {
   .wrapper {
     width: 738px;
     padding: 0 15px;
+  }
+  .wrapper-full {
+    max-width: 768px;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
   .details {
     width: 768px;
@@ -2517,14 +2523,31 @@ button.swiper-pagination-bullet {
   .promo__item {
     font-size: 21px;
     line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .promo__item::before {
+    transform: scale(1) translateY(-80%);
   }
   .promo__item:first-child,
   .promo__item:nth-child(2) {
     max-width: 370px;
   }
+  .promo_h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .promo__list {
+    margin-bottom: 25px;
+  }
+  .promo__img {
+    margin-top: 50px;
+  }
   .menu__link {
     font-size: 16px;
     line-height: 1.2;
+  }
+  .menu__item {
+    padding: 0 20px;
   }
   .header {
     background-color: transparent;
@@ -2535,10 +2558,22 @@ button.swiper-pagination-bullet {
   }
   .protect__text {
     padding: 0 35px;
+    margin-bottom: 25px;
+  }
+  .protect__text:last-of-type {
+    margin-bottom: 55px;
+  }
+  .protect__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 20px;
   }
   .wrapper {
     width: 960px;
     padding: 0 10px;
+  }
+  .wrapper-full {
+    max-width: 960px;
   }
   .details {
     width: 100%;
@@ -2562,6 +2597,7 @@ button.swiper-pagination-bullet {
   }
   .features {
     width: 100%;
+    padding-bottom: 150px;
   }
   .features__img {
     width: 424px;
@@ -2587,10 +2623,18 @@ button.swiper-pagination-bullet {
   }
   .unique {
     width: 100%;
+    margin-top: 20px;
+  }
+  .unique__title {
+    padding-top: 55px;
+  }
+  .unique__title:after {
+    right: 0;
   }
   .unique__block {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
   .unique__bug-item:first-child {
     left: 23%;
@@ -2607,6 +2651,9 @@ button.swiper-pagination-bullet {
   }
   .unique__bug-item:nth-child(6) {
     right: 27%;
+  }
+  .unique__item:first-child {
+    margin-right: 100px;
   }
   .unique__item:nth-child(3) {
     width: 235px;
@@ -2630,13 +2677,16 @@ button.swiper-pagination-bullet {
     left: 40%;
   }
   .howto__item:first-child .howto__pic {
-    left: 70%;
+    left: 46%;
+    top: 45px;
   }
   .howto__item:nth-child(2) .howto__pic {
-    left: 58%;
+    left: 36%;
+    top: 46%;
   }
   .howto__item:nth-child(3) .howto__pic {
-    left: 70%;
+    left: 46%;
+    top: 82%;
   }
   .howto__item:nth-child(3) .howto__step {
     margin-right: 0;
@@ -2644,10 +2694,46 @@ button.swiper-pagination-bullet {
   }
   .howto__text {
     padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .howto__title {
+    font-size: 72px;
+    line-height: 72px;
+    padding-top: 20px;
+    margin-bottom: 80px;
+  }
+  .howto__title::after {
+    right: 170px;
+  }
+  .howto__main {
+    width: 676px;
+    height: 676px;
+  }
+  .howto__circle {
+    transform: translate(20%, 0);
+  }
+  .howto__circle::before {
+    top: 85px;
+    left: -30px;
+  }
+  .howto__list {
+    width: 40%;
+    padding-top: 50px;
+  }
+  .howto__item:nth-child(2) {
+    max-width: 305px;
+  }
+  .howto__item:nth-child(2) .howto__step {
+    padding-right: 20px;
+  }
+  .howto__item:last-child {
+    margin-right: 20px;
   }
   .review {
     width: 100%;
     background-size: cover;
+    padding-top: 50px;
+    background-position: right bottom;
   }
   .review__title {
     width: 540px;
@@ -2663,6 +2749,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     font-size: 14px;
     line-height: 1.2;
+    padding-top: 75px;
   }
   .footer__bottom {
     display: block;
@@ -2684,8 +2771,14 @@ button.swiper-pagination-bullet {
   .swiper-container {
     width: 520px;
     padding: 0 20px;
+    margin-right: 55px;
+    margin-top: 40px;
   }
   .swiper-container:last-child {
     padding: 0;
+    margin-top: 0;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    margin-left: calc(-48%);
   }
 }
