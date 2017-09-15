@@ -90,7 +90,8 @@
   .howto__title {
     font-size: 62px;
     line-height: 62px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
+    margin-top: 25px;
     position: relative;
     
     &::after {
@@ -113,7 +114,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%,0);
+    transform: translate(45%,0);
     
     &::before {
       content: "";
@@ -145,8 +146,8 @@
     }
     
     &:nth-child(2) .howto__pic {
-      top: 40%;
-      left: 50%;
+      top: 42%;
+      left: 46%;
       z-index: 5;
       
       &::before {
@@ -155,8 +156,8 @@
     }
     
     &:nth-child(3) .howto__pic {
-      top: 90%;
-      left: 70%;
+      top: 83%;
+      left: 60%;
       z-index: 5;
       
       &::before {
@@ -226,5 +227,34 @@
   .howto__text {
     display: block;
     text-align: center;
+    margin-top: 0;
+  }
+  
+  .howto__item:last-child {
+    margin-bottom: 100px;
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .howto__item:first-child .howto__pic {
+    left: 70%;
+  }
+  
+  .howto__item:nth-child(2) .howto__pic {
+    left: 58%;
+  }
+  
+  .howto__item:nth-child(3) .howto__pic {
+    left: 70%;
+  }
+  
+  .howto__item:nth-child(3) .howto__step {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .howto__text {
+    padding: 0 20px; 
   }
 }

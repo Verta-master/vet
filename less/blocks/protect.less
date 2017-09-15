@@ -49,11 +49,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
   
   .protect__text {
     padding: 0 20px;
+    font-size: 18px;
+    line-height: 28px;
     
     &--hidden {
       display: block;
@@ -63,5 +65,12 @@
   
   .protect__arrow {
     display: none;
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .protect__text {
+    padding: 0 35px;
   }
 }

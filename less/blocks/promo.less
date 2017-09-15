@@ -102,7 +102,6 @@
 @media @tablet {
   .promo {
     width: 768px;
-    padding-top: 30px;
     padding-bottom: 30px;
     background-image: url(../img/background-1.jpg);
     background-size: cover;
@@ -111,6 +110,7 @@
   .promo_h1 {
     font-size: 65px;
     max-width: 490px;
+    margin-top: 40px;
     
     span {
       font-size: 21px;
@@ -122,9 +122,17 @@
   .promo__list {
     order: 2;
     color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
   }
   
   .promo__item {
+    
+    &::before {
+      transform: scale(0.75) translateY(-70%);
+    }
+    
     &:first-child::before {
       background-image: url(../img/icon-time.png);
     }
@@ -146,11 +154,31 @@
   .promo__slogan {
     color: #fff;
     font-size: 38px;
+    padding-left: 50px;
   }
   
   .promo__img {
     width: 582px;
     height: auto;
-    transform: rotate(5deg);
+    transform: rotate(1deg);
+    margin-top: 80px;
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .promo {
+    width: 100%;
+    background-position: center top;
+  }
+  
+  .promo__item {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  
+  .promo__item:first-child,
+  .promo__item:nth-child(2) {
+    max-width: 370px;
   }
 }

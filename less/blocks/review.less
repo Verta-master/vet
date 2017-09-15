@@ -71,6 +71,7 @@
   .review {
     width: 768px;
     position: relative;
+    padding-top: 10px;
   }
   
   .review__title {
@@ -100,5 +101,25 @@
     content: "";
     width: 130px;
     height: 160px;
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .review {
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .review__title {
+    width: 540px;
+    margin-left: auto;
+    font-size: 48px;
+    line-height: 55px;
+  }
+  
+  .review__main {
+    transform: none;
+    left: 0;
   }
 }

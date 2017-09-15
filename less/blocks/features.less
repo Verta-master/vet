@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 120px;
     position: relative;
   }
@@ -190,5 +190,44 @@
       background-image: url(../img/line-1.png);
       transform: scaleY(-1);
     }
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .features {
+    width: 100%;
+  }
+  
+  .features__img {
+    width: 424px;
+    height: auto;
+  }
+  
+  .features__list:first-of-type .features__item {
+    &:nth-child(2) {
+      max-width: 250px;
+      margin-right: 20px;
+      margin-left: auto;
+    }
+    
+    &:nth-child(4) {
+      margin-right: 20px;
+    }
+  }
+  
+  .features__list:last-of-type .features__item {
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-left: 20px;
+    }
+    
+    &:nth-child(3) {
+      max-width: 200px;
+    }
+  }
+  
+  .features__list:first-of-type .features__item:nth-child(2)::after {
+    left: 60px;
   }
 }

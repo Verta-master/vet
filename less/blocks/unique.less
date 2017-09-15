@@ -187,11 +187,13 @@
   .unique {
     width: 768px;
     background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 120px;
   }
   
   .unique__title {
     font-size: 48px;
-    line-height: 74px;
+    line-height: 1.1;
     position: relative;
     z-index: 1;
     
@@ -202,8 +204,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      bottom: 0;
+      right: -10%;
       width: 364px;
       height: 250px;
       background-image: url(../img/steps.png);
@@ -216,12 +218,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
   }
   
   .unique__item {
     &:first-child {
       order: 2;
       margin-bottom: 0;
+      margin-right: 60px;
     }
     
     &:nth-child(2) {
@@ -233,6 +237,7 @@
     &:nth-child(3) {
       order: 1;
       width: 125px;
+      margin-right: 20px;
     }
     
     &:nth-child(4) {
@@ -248,28 +253,99 @@
     height: auto;
   }
   
+  .unique__bug-item img {
+    transform: scale(1);
+  }
+  
   .unique__bug-item {
     transform: scale(1);
     
     &:first-child {
-      top: 27%;
+      top: 30%;
+      left: 10%;
     }
     &:nth-child(2) {
-      top: -20px;
-      left: 17%;
+      top: 5%;
+      left: 22%;
     }
     &:nth-child(3) {
       top: 50%;
     }
     &:nth-child(4) {
-      right: 22%;
+      right: 25%;
+      top: 40px;
     }
     &:nth-child(5) {
-      right: 17%;
+      right: 22%;
     }
     &:nth-child(6) {
       top: 46%;
-      right: 16%;
+      right: 21%;
     }
+  }
+  
+  .unique__block {
+    margin-bottom: 5px;
+  }
+  
+  .unique__main {
+    transform: none;
+  }
+}
+
+//----------------desktop
+@media @desktop {
+  .unique {
+    width: 100%;
+  }
+  
+  .unique__block {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .unique__bug-item:first-child {
+    left: 23%;
+  }
+  
+  .unique__bug-item:nth-child(2) {
+    left: 32%;
+  }
+  
+  .unique__bug-item:nth-child(3) {
+    left: 50%;
+  }
+  
+  .unique__bug-item:nth-child(4),
+  .unique__bug-item:nth-child(5) {
+    right: 28%;
+  }
+  
+  .unique__bug-item:nth-child(6) {
+    right: 27%;
+  }
+  
+  .unique__item:nth-child(3) {
+    width: 235px;
+    position: absolute;
+    bottom: -130%;
+    left: -5%;
+  }
+  
+  .unique__item:nth-child(4) {
+    width: 205px;
+    position: absolute;
+    bottom: -100%;
+    right: -2%;
+  }
+  
+  .unique__list {
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .unique__product {
+    top: 50px;
+    left: 40%;
   }
 }
