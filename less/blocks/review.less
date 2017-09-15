@@ -65,3 +65,40 @@
   transform: translatex(-50%);
   border-radius: 50%;
 }
+
+//--------------tablet
+@media @tablet {
+  .review {
+    width: 768px;
+    position: relative;
+  }
+  
+  .review__title {
+    font-size: 40px;
+    line-height: 46px;
+    
+    span {
+      font-size: 36px;
+    }
+  }
+  
+  .review__main {
+    display: block;
+    transform: scale(0.75);
+    position: absolute;
+    top: 16%;
+    left: -20%;
+  }
+  
+  .review__slide {
+    width: 480px;
+    padding: 30px;
+    margin-bottom: 65px;
+  }
+  
+  .review__text::after {
+    content: "";
+    width: 130px;
+    height: 160px;
+  }
+}

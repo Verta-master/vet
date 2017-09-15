@@ -85,3 +85,146 @@
 .howto__check:checked + .howto__label::after {
   transform: scaleY(-1);
 }
+//--------------tablet
+@media @tablet {
+  .howto__title {
+    font-size: 62px;
+    line-height: 62px;
+    margin-bottom: 80px;
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: 20px;
+      width: 153px;
+      height: 124px;
+      background-image: url(../img/steps-2.png);
+    }
+  }
+  
+  .howto__list {
+    width: 50%;
+  }
+  
+  .howto__circle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,0);
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: -35px;
+      width: 174px;
+      height: 546px;
+      background-image: url(../img/ellipse.png);
+    }
+  }
+  
+  .howto__main {
+    border-radius: 50%;
+    width: 556px;
+    height: 556px;
+  }
+  
+  .howto__wrap {
+    width: 100%;
+    position: relative;
+  }
+  
+  .howto__item {
+    &:first-child .howto__pic {
+      top: -20px;
+      left: 60%;
+      z-index: 5;
+    }
+    
+    &:nth-child(2) .howto__pic {
+      top: 40%;
+      left: 50%;
+      z-index: 5;
+      
+      &::before {
+        content: "2";
+      }
+    }
+    
+    &:nth-child(3) .howto__pic {
+      top: 90%;
+      left: 70%;
+      z-index: 5;
+      
+      &::before {
+        content: "3";
+      }
+    }
+  }
+  
+  .howto__pic {
+    position: absolute;
+    
+    &::before {
+      content: "1";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 48px;
+      background-color: @violet;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 48px;
+    }
+  }
+  
+  .howto__step {
+    text-align: right;
+    
+    &::before {
+      left: 85%;
+    }
+  }
+  
+  .howto__item {
+    margin-bottom: 120px;
+    
+    &:first-child .howto__step {
+      padding-right: 0;
+    }
+    
+    &:nth-child(2) .howto__step {
+      padding-right: 60px;
+      
+      &::before {
+        left: 70%;
+      }
+    }
+    
+    &:nth-child(3) .howto__step {
+      padding-right: 0;
+      max-width: 350px;
+    }
+  }
+  
+  .howto__label {
+    display: block;
+    text-align: center;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .howto__text {
+    display: block;
+    text-align: center;
+  }
+}

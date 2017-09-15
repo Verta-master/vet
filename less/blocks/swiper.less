@@ -118,15 +118,13 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
+  top: 35%;
+  width: 23px;
+  height: 35px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  -moz-background-size: 27px 44px;
-  -webkit-background-size: 27px 44px;
-  background-size: 27px 44px;
+  background-size: 23px 35px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -138,8 +136,9 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  left: 10px;
+  background-image: url(../img/arrow-next.png);
+  transform: rotate(180deg);
+  left: 0;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
@@ -152,8 +151,8 @@
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
+  background-image: url(../img/arrow-next.png);
+  right: 0;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
@@ -595,4 +594,48 @@ button.swiper-pagination-bullet {
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: @violet;
+}
+
+//--------------tablet
+@media @tablet {
+  .swiper-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: 0;
+    
+    &:last-child {
+      padding: 0;
+      width: 520px;
+    }
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+  
+  .swiper-pagination {
+    display: none;
+  }
+  
+  .gallery-top {
+    height: 80%;
+  }
+  .gallery-thumbs {
+    height: 120px;
+    
+    .review__img {
+      width: 119px;
+      height: auto;
+      transform: none;
+      bottom: 0;
+    }
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 119px;
+    height: 100%;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    margin-left: calc(-50% + 4%);
+  }
 }
