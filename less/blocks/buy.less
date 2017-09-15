@@ -105,3 +105,59 @@
     height: 96px;
   }
 }
+//--------------tablet
+@media @tablet {
+  .buy__title {
+    font-size: 42px;
+    line-height: 55px;
+    
+    span {
+      font-size: 72px;
+      line-height: 72px;
+    }
+  }
+  
+  .buy__switch {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .buy__label {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  
+  .buy__list {
+    flex-wrap: wrap;
+    height: 370px;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .buy__item {
+    width: 50%;
+    text-align: center;
+
+    &:first-child img {
+      width: 279px;
+      height: auto;
+    }
+
+    &:nth-child(2) img {
+      width: 392px;
+      height: auto;
+    }
+
+    &:nth-child(3) img {
+      width: 392px;
+      height: auto;
+    }
+
+    &:nth-child(4) img {
+      width: 224px;
+      height: auto;
+    }
+  }
+}

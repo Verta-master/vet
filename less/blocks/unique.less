@@ -181,3 +181,65 @@
     right: 7%;
   }
 }
+
+//--------------tablet
+@media @tablet {
+  .unique {
+    width: 768px;
+    background-size: cover;
+  }
+  
+  .unique__title {
+    font-size: 48px;
+    line-height: 74px;
+    position: relative;
+    z-index: 1;
+    
+    span {
+      font-size: 72px;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 364px;
+      height: 250px;
+      background-image: url(../img/steps.png);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+  
+  .unique__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .unique__item {
+    &:first-child {
+      order: 2;
+      margin-bottom: 0;
+    }
+    
+    &:nth-child(2) {
+      order: 3;
+      margin-bottom: 0;
+      align-self: auto;
+    }
+    
+    &:nth-child(3) {
+      order: 1;
+      width: 125px;
+    }
+    
+    &:nth-child(4) {
+      order: 4;
+      width: 140px;
+      margin-bottom: 0;
+      align-self: flex-end;
+    }
+  }
+}
