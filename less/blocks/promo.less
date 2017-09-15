@@ -97,3 +97,60 @@
   margin: 0;
   transform: rotate(5deg);
 }
+
+//--------------tablet
+@media @tablet {
+  .promo {
+    width: 768px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../img/background-1.jpg);
+    background-size: cover;
+  }
+  
+  .promo_h1 {
+    font-size: 65px;
+    max-width: 490px;
+    
+    span {
+      font-size: 21px;
+      max-width: 490px;
+      color: @violet;
+    }
+  }
+  
+  .promo__list {
+    order: 2;
+    color: #fff;
+  }
+  
+  .promo__item {
+    &:first-child::before {
+      background-image: url(../img/icon-time.png);
+    }
+    
+    &:nth-child(2)::before {
+      background-image: url(../img/icon-cats.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../img/icon-home.png);
+    }
+    
+    &:first-child,
+    &:nth-child(2) {
+      max-width: 295px;
+    }
+  }
+  
+  .promo__slogan {
+    color: #fff;
+    font-size: 38px;
+  }
+  
+  .promo__img {
+    width: 582px;
+    height: auto;
+    transform: rotate(5deg);
+  }
+}

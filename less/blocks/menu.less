@@ -1,3 +1,45 @@
 .menu {
   display: none;
 }
+
+//--------------tablet
+@media @tablet {
+  .menu {
+    display: block;
+    padding-top: 8px;
+  }
+  
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu__link {
+    font-size: 13px;
+    color: #333333;
+    padding-bottom: 3px;
+    
+    &--active {
+      border-bottom: 2px solid @violet;
+    }
+  }
+  
+  .menu__item {
+    padding: 0 15px;
+    position: relative;
+    
+    &::after {
+      content: "|";
+      position: absolute;
+      top: 2px;
+      right: 0;
+      color: #333333;
+      font-size: 13px;
+    }
+    
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
