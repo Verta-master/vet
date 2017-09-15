@@ -1365,13 +1365,13 @@ button {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  width: 27px;
-  height: 44px;
+  top: 35%;
+  width: 23px;
+  height: 35px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  background-size: 27px 44px;
+  background-size: 23px 35px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1383,8 +1383,9 @@ button {
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  left: 10px;
+  background-image: url(../img/arrow-next.png);
+  transform: rotate(180deg);
+  left: 0;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
@@ -1397,8 +1398,8 @@ button {
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-  right: 10px;
+  background-image: url(../img/arrow-next.png);
+  right: 0;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
@@ -2223,5 +2224,244 @@ button.swiper-pagination-bullet {
     margin-bottom: 0;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .unique__product {
+    width: 246px;
+    height: auto;
+  }
+  .unique__bug-item {
+    transform: scale(1);
+  }
+  .unique__bug-item:first-child {
+    top: 27%;
+  }
+  .unique__bug-item:nth-child(2) {
+    top: -20px;
+    left: 17%;
+  }
+  .unique__bug-item:nth-child(3) {
+    top: 50%;
+  }
+  .unique__bug-item:nth-child(4) {
+    right: 22%;
+  }
+  .unique__bug-item:nth-child(5) {
+    right: 17%;
+  }
+  .unique__bug-item:nth-child(6) {
+    top: 46%;
+    right: 16%;
+  }
+  .howto__title {
+    font-size: 62px;
+    line-height: 62px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .howto__title::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    width: 153px;
+    height: 124px;
+    background-image: url(../img/steps-2.png);
+  }
+  .howto__list {
+    width: 50%;
+  }
+  .howto__circle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, 0);
+  }
+  .howto__circle::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    width: 174px;
+    height: 546px;
+    background-image: url(../img/ellipse.png);
+  }
+  .howto__main {
+    border-radius: 50%;
+    width: 556px;
+    height: 556px;
+  }
+  .howto__wrap {
+    width: 100%;
+    position: relative;
+  }
+  .howto__item:first-child .howto__pic {
+    top: -20px;
+    left: 60%;
+    z-index: 5;
+  }
+  .howto__item:nth-child(2) .howto__pic {
+    top: 40%;
+    left: 50%;
+    z-index: 5;
+  }
+  .howto__item:nth-child(2) .howto__pic::before {
+    content: "2";
+  }
+  .howto__item:nth-child(3) .howto__pic {
+    top: 90%;
+    left: 70%;
+    z-index: 5;
+  }
+  .howto__item:nth-child(3) .howto__pic::before {
+    content: "3";
+  }
+  .howto__pic {
+    position: absolute;
+  }
+  .howto__pic::before {
+    content: "1";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #682567;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+  }
+  .howto__step {
+    text-align: right;
+  }
+  .howto__step::before {
+    left: 85%;
+  }
+  .howto__item {
+    margin-bottom: 120px;
+  }
+  .howto__item:first-child .howto__step {
+    padding-right: 0;
+  }
+  .howto__item:nth-child(2) .howto__step {
+    padding-right: 60px;
+  }
+  .howto__item:nth-child(2) .howto__step::before {
+    left: 70%;
+  }
+  .howto__item:nth-child(3) .howto__step {
+    padding-right: 0;
+    max-width: 350px;
+  }
+  .howto__label {
+    display: block;
+    text-align: center;
+  }
+  .howto__label::after {
+    display: none;
+  }
+  .howto__text {
+    display: block;
+    text-align: center;
+  }
+  .review {
+    width: 768px;
+    position: relative;
+  }
+  .review__title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .review__title span {
+    font-size: 36px;
+  }
+  .review__main {
+    display: block;
+    transform: scale(0.75);
+    position: absolute;
+    top: 16%;
+    left: -20%;
+  }
+  .review__slide {
+    width: 480px;
+    padding: 30px;
+    margin-bottom: 65px;
+  }
+  .review__text::after {
+    content: "";
+    width: 130px;
+    height: 160px;
+  }
+  .footer {
+    width: 768px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-size: 10px;
+    line-height: 1.2;
+    background-position: center top;
+  }
+  .footer__main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  .footer__block {
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .footer__logo:nth-child(2) {
+    padding-left: 0;
+  }
+  .send__wrap {
+    width: 194px;
+  }
+  .send__input {
+    min-height: 34px;
+    padding-left: 20px;
+  }
+  .send__btn {
+    height: 32px;
+    width: 44px;
+  }
+  .swiper-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .swiper-container:last-child {
+    padding: 0;
+    width: 520px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .gallery-top {
+    height: 80%;
+  }
+  .gallery-thumbs {
+    height: 120px;
+  }
+  .gallery-thumbs .review__img {
+    width: 119px;
+    height: auto;
+    transform: none;
+    bottom: 0;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 119px;
+    height: 100%;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    margin-left: calc(-46%);
   }
 }
