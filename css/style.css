@@ -466,6 +466,7 @@ button {
   margin-bottom: 15px;
 }
 .promo__item {
+  max-width: 320px;
   padding-left: 73px;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -543,6 +544,7 @@ button {
   height: 35px;
 }
 .btn {
+  display: block;
   width: 184px;
   min-height: 42px;
   color: #fff;
@@ -796,6 +798,13 @@ button {
   width: 272px;
   height: auto;
 }
+.features__link {
+  color: inherit;
+  border-bottom: 1px solid #000;
+}
+.features__link:hover {
+  border-bottom: none;
+}
 .buy__title {
   font-weight: 700;
   font-size: 26px;
@@ -901,7 +910,7 @@ button {
   background-image: url(../img/background-4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right -400px top;
+  background-position: right top;
 }
 .unique__title {
   font-size: 30px;
@@ -1206,6 +1215,9 @@ button {
 }
 .footer__logo img {
   margin-right: 20px;
+}
+.footer__logo:first-child .footer__text {
+  width: 230px;
 }
 .footer__logo:nth-child(2) {
   padding-left: 70px;
@@ -1887,6 +1899,9 @@ button.swiper-pagination-bullet {
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 10px;
+  }
+  .promo__item {
+    max-width: none;
   }
   .promo__item::before {
     transform: scale(0.75) translateY(-70%);
