@@ -608,14 +608,16 @@ button {
   margin: 0 auto;
   padding: 0 10px;
 }
+.wrapper-complex {
+  background-image: url(../img/background-complex-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top 235px;
+}
 .details {
   width: 320px;
   margin: 0 auto;
   margin-top: 20px;
-  background-image: url(../img/background-2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top 215px;
 }
 .details__bg {
   transform: scale(1.2);
@@ -673,7 +675,7 @@ button {
 .details__final {
   position: absolute;
   right: -10px;
-  bottom: -45px;
+  bottom: -30px;
 }
 .details__link {
   color: #fff;
@@ -776,13 +778,10 @@ button {
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 55px;
-  background-image: url(../img/background-3.png);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: cover;
+  padding-bottom: 50px;
 }
 .features__item {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .features__item span {
   display: block;
@@ -1143,9 +1142,6 @@ button {
   background-image: url(../img/background-3.png);
   background-repeat: no-repeat;
   background-position: center;
-}
-.review__main {
-  display: none;
 }
 .review__title {
   font-size: 24px;
@@ -2019,10 +2015,14 @@ button.swiper-pagination-bullet {
     width: 738px;
     padding: 0 15px;
   }
+  .wrapper-complex {
+    background-image: url(../img/background-complex-tablet.png);
+    background-position: center top 520px;
+    background-size: auto;
+  }
   .details {
     width: 768px;
     margin-top: 0;
-    background-position: center top 510px;
   }
   .details__bg {
     transform: none;
@@ -2122,7 +2122,6 @@ button.swiper-pagination-bullet {
     padding-top: 100px;
     padding-bottom: 120px;
     position: relative;
-    background-position: right top;
   }
   .features__list {
     width: 30%;
@@ -2533,6 +2532,10 @@ button.swiper-pagination-bullet {
     width: 768px;
     position: relative;
     padding-top: 10px;
+    background-image: url(../img/girl.png), url(../img/background-3.png);
+    background-repeat: no-repeat;
+    background-position: left -80px bottom 58px, center;
+    background-size: 350px auto, cover;
   }
   .review__title {
     font-size: 40px;
@@ -2540,13 +2543,6 @@ button.swiper-pagination-bullet {
   }
   .review__title span {
     font-size: 36px;
-  }
-  .review__main {
-    display: block;
-    transform: scale(0.75);
-    position: absolute;
-    top: 16%;
-    left: -20%;
   }
   .review__slide {
     width: 480px;
@@ -2665,6 +2661,7 @@ button.swiper-pagination-bullet {
   .menu__link {
     font-size: 16px;
     line-height: 1.2;
+    text-shadow: 0px 0px 15px #fff;
   }
   .menu__item {
     padding: 0 20px;
@@ -2692,9 +2689,12 @@ button.swiper-pagination-bullet {
     width: 960px;
     padding: 0 10px;
   }
+  .wrapper-complex {
+    background-image: url(../img/background-complex.png);
+    background-position: center top 570px;
+  }
   .details {
     width: 100%;
-    background-position: center top 540px;
   }
   .details__bg {
     display: block;
@@ -2712,9 +2712,12 @@ button.swiper-pagination-bullet {
   .details__final {
     margin-right: 180px;
   }
+  .details__wrap {
+    margin-top: 30px;
+  }
   .features {
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 280px;
   }
   .features__img {
     width: 424px;
@@ -2737,6 +2740,13 @@ button.swiper-pagination-bullet {
   }
   .features__list:first-of-type .features__item:nth-child(2)::after {
     left: 60px;
+  }
+  .features__img {
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+  .features__item--bottom {
+    bottom: 120px;
   }
   .unique {
     width: 100%;
@@ -2850,17 +2860,14 @@ button.swiper-pagination-bullet {
     width: 100%;
     background-size: cover;
     padding-top: 50px;
-    background-position: right bottom;
+    background-position: left -80px bottom 65px, center;
+    background-size: 490px auto, cover;
   }
   .review__title {
     width: 540px;
     margin-left: auto;
     font-size: 48px;
     line-height: 55px;
-  }
-  .review__main {
-    transform: none;
-    left: 0;
   }
   .footer {
     width: 100%;
