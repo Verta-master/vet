@@ -396,6 +396,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -525,6 +526,7 @@ button {
   -ms-flex-align: center;
       align-items: center;
   padding: 3px 0;
+  padding-right: 20px;
 }
 .header__link {
   color: #333333;
@@ -546,6 +548,13 @@ button {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
   background-color: #92c85e;
   border: none;
   border-radius: 30px;
@@ -767,7 +776,7 @@ button {
   padding-top: 55px;
   background-image: url(../img/background-3.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
   background-size: cover;
 }
 .features__item {
@@ -891,7 +900,8 @@ button {
   color: #fff;
   background-image: url(../img/background-4.png);
   background-repeat: no-repeat;
-  background-position: right -200px center;
+  background-size: cover;
+  background-position: right -400px top;
 }
 .unique__title {
   font-size: 30px;
@@ -1760,6 +1770,99 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: #682567;
 }
+.arcticmodal-overlay,
+.arcticmodal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+*:first-child + html .arcticmodal-container {
+  height: 100%;
+}
+.arcticmodal-container_i {
+  height: 100%;
+  margin: 0 auto;
+}
+.arcticmodal-container_i2 {
+  padding: 24px;
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+}
+.arcticmodal-error {
+  padding: 20px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+}
+.arcticmodal-loading {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: #000 url(loading.gif) no-repeat 50% 50%;
+}
+.box-modal {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 280px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+}
+.box-modal_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../img/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.modal__item {
+  margin-bottom: 35px;
+  position: relative;
+}
+.modal__item:last-child {
+  margin-bottom: 0;
+}
+.modal__item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #92c85e;
+  border-bottom: 6px solid transparent;
+}
+.modal__text {
+  margin: 0;
+}
 @media (min-width: 768px) {
   .promo {
     width: 768px;
@@ -1872,7 +1975,6 @@ button.swiper-pagination-bullet {
   }
   .btn--center {
     width: 288px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1901,11 +2003,6 @@ button.swiper-pagination-bullet {
   .wrapper {
     width: 738px;
     padding: 0 15px;
-  }
-  .wrapper-full {
-    max-width: 768px;
-    margin: 0 auto;
-    overflow-x: hidden;
   }
   .details {
     width: 768px;
@@ -2010,6 +2107,7 @@ button.swiper-pagination-bullet {
     padding-top: 100px;
     padding-bottom: 120px;
     position: relative;
+    background-position: right top;
   }
   .features__list {
     width: 30%;
@@ -2514,6 +2612,13 @@ button.swiper-pagination-bullet {
   .gallery-thumbs .swiper-wrapper {
     margin-left: calc(-46%);
   }
+  .box-modal {
+    width: 525px;
+    padding: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 @media (min-width: 960px) {
   .promo {
@@ -2571,9 +2676,6 @@ button.swiper-pagination-bullet {
   .wrapper {
     width: 960px;
     padding: 0 10px;
-  }
-  .wrapper-full {
-    max-width: 960px;
   }
   .details {
     width: 100%;
